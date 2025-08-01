@@ -8,7 +8,7 @@
     "prestart:api": "node tools/createMockDb.js",
     "build": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode production --config webpack.config.prod.js --env.PLATFORM=production --env.VERSION=stag --progress",
     "predeploy": "npm run build",
-    "deploy": "npm run build && cp -r dist/* ./ && git add . && git commit -m 'Deploy to GitHub Pages' && git push origin main",
+    "deploy": "npm run build && cp -r dist/* ./ && git add . && git commit -m 'Deploy to GitHub Pages' && git push origin master",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
